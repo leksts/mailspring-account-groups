@@ -1,0 +1,32 @@
+{
+  "name": "account-groups",
+  "displayName": "Account Groups",
+  "title": "Account Groups",
+  "version": "1.0.0",
+  "description": "Group your Mailspring accounts and view a group's mailboxes combined, next to All Accounts and the single accounts.",
+  "keywords": [
+    "mailspring",
+    "mailspring-plugin",
+    "accounts",
+    "groups",
+    "unified-inbox",
+    "sidebar"
+  ],
+  "author": "Leks ter Schuur",
+  "license": "MIT",
+  "homepage": "https://github.com/leksts/mailspring-account-groups#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leksts/mailspring-account-groups.git"
+  },
+  "bugs": {
+    "url": "https://github.com/leksts/mailspring-account-groups/issues"
+  },
+  "main": "./lib/main",
+  "windowTypes": {
+    "default": true
+  },
+  "engines": {
+    "mailspring": "*"
+  }
+}

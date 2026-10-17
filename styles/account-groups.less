@@ -1,0 +1,69 @@
+@import 'ui-variables';
+
+// The sidebar column stacks every RootSidebar component; the built-in account sidebar has
+// order 0, so a negative order puts the groups above it.
+.account-groups-sidebar {
+  order: -1;
+  flex-shrink: 0;
+  max-height: 40%;
+  overflow-y: auto;
+  background-color: @source-list-bg;
+  border-bottom: 1px solid @border-color-divider;
+
+  .account-group-empty .name {
+    font-style: italic;
+    color: @text-color-subtle;
+  }
+}
+
+.container-account-groups {
+  max-width: 640px;
+
+  .account-groups-intro,
+  .account-groups-empty {
+    color: @text-color-subtle;
+  }
+
+  .account-group-editor {
+    margin-bottom: 20px;
+    padding: 12px 14px;
+    border: 1px solid @border-color-divider;
+    border-radius: 6px;
+  }
+
+  .account-group-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+
+    .account-group-name {
+      flex: 1;
+      font-weight: 600;
+    }
+  }
+
+  .account-group-shortcut {
+    color: @text-color-subtle;
+    font-size: @font-size-smaller;
+  }
+
+  .account-group-account {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 3px 0;
+    cursor: default;
+  }
+
+  .account-group-color {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+  }
+
+  .account-group-email {
+    color: @text-color-subtle;
+    font-size: @font-size-smaller;
+  }
+}
